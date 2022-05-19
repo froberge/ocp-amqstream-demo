@@ -21,7 +21,7 @@ public class OrderResource {
 
     @POST
     public Response send(Order order) {
-        producer.sendMovieToKafka(order);
+        producer.sendOrderToKafka(order);
         // Return an 202 - Accepted response.
         return Response.accepted().build();
     }
