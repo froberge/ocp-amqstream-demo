@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  annotations:
+    openshift.io/description: Kafka project that contains my kafka instance for the demo
+    openshift.io/display-name: My Kafka project 
+  name: mykafka
+spec: {}
+status: {}
