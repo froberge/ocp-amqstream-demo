@@ -69,6 +69,8 @@ Kafka est juste un resource dans le cluster, on peut donc les décrire avec diff
 
 `Kafka broker`permet aux consommateurs de récupérer des messages par sujet, partition et décalage. Les courtiers Kafka peuvent créer un cluster Kafka en partageant des informations entre eux directement ou indirectement à l'aide de Zookeeper. Un cluster Kafka a exactement un courtier qui agit en tant que contrôleur.
 
+`Kafka streams` est une API Java qui implémente les fonctionnalité d'aggregation de topics, regroupement de topic, redirection ..., de manière évolutive et tolérante aux pannes. L'une des choses importantes de l'application Kafka Streams est qu'elle ne s'exécute pas à l'intérieur d'un broker, mais qu'elle s'exécute dans une JVM distincte, peut-être dans le même cluster, ou peut-être dans un cluster différent, mais c'est un processus différent.
+
 `Zookeeper` est principalement utilisé pour suivre l'état des nœuds dans le cluster Kafka et maintenir une liste de sujets et de messages Kafka.
 
 `Partition` prend le journal d'un topic unique et le divise en plusieurs journaux, chacun pouvant résider sur un nœud distinct du cluster Kafka. De cette façon, le travail de stockage des messages, d'écriture de nouveaux messages et de traitement des messages existants peut être réparti entre plusieurs nœuds du cluster. 
