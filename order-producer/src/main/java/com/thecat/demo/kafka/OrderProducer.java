@@ -13,7 +13,8 @@ import javax.inject.Inject;
 @ApplicationScoped
 public class OrderProducer {
 
-    @Inject @Channel("order-out")
+    @Inject 
+    @Channel("order-out")
     Emitter<Record<String, Integer>> emitter;
 
     private final Logger logger = Logger.getLogger(OrderProducer.class);

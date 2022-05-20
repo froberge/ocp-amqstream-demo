@@ -32,8 +32,8 @@ La source d'événements envoie des événements au système de traitement d'év
 * [Intasllation de Kafka](#installation)
 * [Commande intéressante](#commande)
 * [Architecture](#architecture)
-* [Demo]()
-
+* [Demo Producer et Consumer](docs/demo-consumer-producer.md)
+* [Demo Kafka Streams](docs/demo-kafka-streams.md)
 
 ##### Prérequis
 * Un cluster OpenShift

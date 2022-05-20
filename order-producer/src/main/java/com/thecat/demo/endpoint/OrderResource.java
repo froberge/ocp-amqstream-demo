@@ -2,6 +2,7 @@ package com.thecat.demo.endpoint;
 
 import javax.inject.Inject;
 import javax.ws.rs.Consumes;
+import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
@@ -24,5 +25,11 @@ public class OrderResource {
         producer.sendOrderToKafka(order);
         // Return an 202 - Accepted response.
         return Response.accepted().build();
+    }
+
+    @GET
+    @Path("/health")
+    public int health() {
+        return Response.Status.OK.getStatusCode();
     }
 }
