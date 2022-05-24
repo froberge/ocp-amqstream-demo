@@ -57,7 +57,7 @@ Kafka est juste un resource dans le cluster, on peut donc les décrire avec diff
  > oc get crds | grep kafka
 * Voir les pods qui se font créer. ( 3 kafka, 3 zookeeper, 1 operator )
 > oc get pods -n mykafka -w 
-* Trouvez les service, fonc le bootstrap
+* Trouvez les service, dont le bootstrap
 > oc get services -n mykafka
 
 
