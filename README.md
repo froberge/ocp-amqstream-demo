@@ -1,6 +1,6 @@
 # Demo Red Hat AMQ Streams on OpenShift
 
-Voici un tutotial sur ce qu'est [REd Hat AMQ streams](https://www.redhat.com/en/resources/amq-streams-datasheet)
+Voici un tutotial sur ce qu'est [Red Hat AMQ streams](https://www.redhat.com/en/resources/amq-streams-datasheet)
 
 
 ## Red Hat AMQ Streams, Apache Kafka sur Red Hat Openshift.
@@ -29,7 +29,7 @@ La source d'événements envoie des événements au système de traitement d'év
 
 ### Table des matière
 * [Prérequis](#prérequis)
-* [Intasllation de Kafka](#installation)
+* [Installation de Kafka](#installation)
 * [Commande intéressante](#commande)
 * [Architecture](#architecture)
 * [Demo Producer et Consumer](docs/demo-consumer-producer.md)
