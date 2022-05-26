@@ -1,4 +1,4 @@
-# Démonstration d'un Producer et d'un Consumer
+# Démonstration Producer/Consumer
 
 
 ## Déploiement du Producer
@@ -57,14 +57,14 @@ ___
 
 ## Test
 
-1. Ouvrir un terminal connecter a OpenShift et accéder au logs the order-consumer
+1. Ouvrir un terminal connecté à OpenShift et accéder aux logs de order-consumer
     ``` 
         stern "order-consumer-\w" -c order-consumer
     ```
 
     ![order-consumer-log](images/consumer-logs.png)
 
-2. Dans un autre terminal envoye un curl au producer
+2. Dans un autre terminal envoyez un curl au producer
     ```
         curl --header "Content-Type: application/json" \
         --request POST \
@@ -72,7 +72,7 @@ ___
         $PRODUCER_URL
     ```
 
-    Resultat: Un entré devrait apparaitre dans le log du consumer
+    Résultat: Un entré devrait apparaitre dans le log du consumer
     ```
     order-consumer-554ff7bbb7-t94sm order-consumer 2022-05-19 20:30:21,922 INFO  [com.the.dem.kaf.OrderConsumer] (vert.x-eventloop-thread-0) Got an order for: Jack Frost for 100$
     ```
